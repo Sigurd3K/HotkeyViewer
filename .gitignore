@@ -1,3 +1,7 @@
+# misc
+.DS_Store
+*.pem
+
 # Logs
 logs
 *.log
@@ -45,6 +49,9 @@ jspm_packages/
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
+# typescript
+next-env.d.ts
+
 # TypeScript cache
 *.tsbuildinfo
 
@@ -78,6 +85,7 @@ web_modules/
 .env.test.local
 .env.production.local
 .env.local
+.env*.local
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -128,3 +136,13 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# vercel
+.vercel
