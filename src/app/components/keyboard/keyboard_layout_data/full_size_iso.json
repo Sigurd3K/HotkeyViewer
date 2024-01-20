@@ -1,0 +1,102 @@
+{
+    "$schema": "./keyboard_schema.json",
+    "layout_name": "Full Size ISO",
+    "dimensions": {
+        "width": 137,
+        "length": 446,
+        "front_height": 20,
+        "back_height": 33
+    },
+    "has_backlighting": true,
+    "zones": [
+        {
+            "name": "Function row",
+            "technical_name": "FUNCTION_ROW",
+            "rows": [
+                { 
+                    "keyslots": ["1U","1U","1U","1U","1U","1U","1U","1U","1U","1U","1U","1U","1U"],
+                    "groups": [1, 4, 4, 4]
+                }
+            ]
+        },
+        {
+            "name": "Number row",
+            "technical_name": "NUMBER_ROW",
+            "rows": [
+                { 
+                    "keyslots": ["1U","1U","1U","1U","1U","1U","1U","1U","1U","1U","1U","1U","1U","2U"]
+                }
+            ]
+        },
+        {
+            "name": "Base group",
+            "technical_name": "BASE_GROUP",
+            "rows": [
+                { 
+                    "keyslots": ["1P5U","1U","1U","1U","1U","1U","1U","1U","1U","1U","1U","1U","1U","1P5U"]
+                },{ 
+                    "keyslots": ["1P75U","1U","1U","1U","1U","1U","1U","1U","1U","1U","1U","1U","2P25U"]
+                },{ 
+                    "keyslots": ["2P25U","1U","1U","1U","1U","1U","1U","1U","1U","1U","1U","2P75U"]
+                }
+            ]
+        },
+        {
+            "name": "Control group",
+            "technical_name": "CONTROL_GROUP",
+            "rows": [
+                { 
+                    "keyslots": ["1U","1U","1U"]
+                }
+            ]
+        },
+        {
+            "name": "Navigation group",
+            "technical_name": "NAVIGATION_KEYS",
+            "rows": [
+                { 
+                    "keyslots": ["1U","1U","1U"]
+                },{ 
+                    "keyslots": ["1U","1U","1U"]
+                }
+            ]
+        },
+        {
+            "name": "Arrow group",
+            "technical_name": "ARROW_KEYS",
+            "rows": [
+                { 
+                    "keyslots": ["1U","1U","1U"]
+                },{ 
+                    "keyslots": ["1U","1U","1U"]
+                }
+            ]
+        },
+        {
+            "name": "Above numpad group",
+            "rows": [
+                { 
+                    "keyslots": ["1U","1U","1U","1U"]
+                }
+            ]
+        },
+        {
+            "name": "Num pad",
+            "technical_name": "NUM_PAD",
+            "rows": [
+                { 
+                    "keyslots": ["1U","1U","1U","1U"]
+                },{ 
+                    "keyslots": ["1U","1U","1U","1U"]
+                },{ 
+                    "keyslots": ["1U","1U","1U","1U"]
+                }
+                ,{ 
+                    "keyslots": ["1U","1U","1U","1U"]
+                },{ 
+                    "keyslots": ["2U","1U","1U"]
+                }
+            ]
+        }
+    ]
+}
