@@ -1,0 +1,55 @@
+.keySlot {
+    grid-column: auto / span 5;
+    grid-row: auto / span 1;
+    padding: 3px;
+    background-color: black;
+}
+
+.keyCap {
+    border: #61bac1 solid 1px;
+    width: 100%;
+    height: 100%;
+    background-color: #69C9D0;
+    font-size: 16pt;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.keySlot-1U {
+    grid-column: auto / span 4;
+}
+
+.keySlot-1P25U {
+   
+    grid-column: auto / span 5;
+}
+
+.keySlot-1P5U {
+    grid-column: auto / span 6;
+}
+
+.keySlot-1P75U {
+    grid-column: auto / span 7;
+}
+
+.keySlot-2U {
+    grid-column: auto / span 8;
+}
+
+.keySlot-2P25U {
+    grid-column: auto / span 9;
+}
+
+.keySlot-2P5U {
+    grid-column: auto / span 10;
+}
+
+.keySlot-2P75U {
+    grid-column: auto / span 11;
+}
+
+.keyCap:hover {
+    background-color: #61bac1;
+}

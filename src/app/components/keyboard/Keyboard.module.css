@@ -1,0 +1,21 @@
+.keyboard {
+    --keyboard-width: brown;
+    --main-bg-color: brown;
+
+    background-color: rgb(69, 52, 89);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+
+    display: grid;
+    grid-template-columns: repeat(60, 20px);
+    grid-template-rows: repeat(5, 80px);
+    column-gap: 0px;
+
+    width:1220px;
+    height: 260px;
+    /*justify-content: space-between*/
+}
