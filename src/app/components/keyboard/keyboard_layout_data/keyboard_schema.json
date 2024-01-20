@@ -1,0 +1,115 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "required": ["layout_name", "dimensions", "zones"],
+    "properties": {
+        "layout_name": {
+            "type": "string",
+            "description": "The layout name of the keyboard"
+        },
+        "brand": {
+            "type": "string",
+            "description": "The brand of the keyboard",
+            "default": "generic brand"
+        },
+        "model": {
+            "type": "string",
+            "description": "The model name of the keyboard",
+            "default": "generic model"
+        },
+        "dimensions": {
+            "type": "object",
+            "description": "The keyboard dimensions in milimeters",
+            "required": ["length", "width"],
+            "properties": {
+                "length": {
+                    "type": "integer",
+                    "description": "The keyboard length in milimeters"
+                },
+                "width": {
+                    "type": "integer",
+                    "description": "The keyboard width in milimeters"
+                },
+                "front_height": {
+                    "type": "integer",
+                    "default": 20,
+                    "description": "The keyboard height in the front side in milimeters"
+                },
+                "back_height": {
+                    "type": "integer",
+                    "default": 30,
+                    "description": "The keyboard height on the backside in milimeters"
+                }
+            }
+        },
+        "has_backlighting": {
+            "type": "boolean",
+            "default": false,
+            "description": "Does the keyboard light the keycaps"
+        },
+        "zones": {
+            "type": "array",
+            "minItems": 1,
+            "description": "All the keyboard groups",
+            "items": {
+                "type": "object",
+                "required": ["name", "rows"],
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "User friendly group name"
+                    },
+                    "technical_name": {
+                        "type": "string",
+                        "description": "Standardized name for the group for easier keymapping",
+                        "enum": [
+                            "FUNCTION_ROW",
+                            "NUMBER_ROW",
+                            "BASE_GROUP",
+                            "NAVIGATION_KEYS",
+                            "ARROW_KEYS",
+                            "NUM_PAD",
+                            "CONTROL_GROUP"
+                        ]
+                    },
+                    "rows": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "keyslots": {
+                                    "type": "array",
+                                    "minItems": 1,
+                                    "items": {
+                                        "type": "string",
+                                        "description": "The list of the keyswidths in the row",
+                                        "enum": [
+                                            "1U",
+                                            "1P25U",
+                                            "1P5U",
+                                            "1P75U",
+                                            "2U",
+                                            "2P25U",
+                                            "2P5U",
+                                            "2P75U",
+                                            "1U_EXTRUDE_UP",
+                                            "1P25U_EXTRUDE_UP",
+                                            "1U_EMPTY"
+                                        ]
+                                    }
+                                },
+                                "groups": {
+                                    "type": "array",
+                                    "description": "Logical row groups, example: 1 4 4 4 for the function row. ",
+                                    "items": {
+                                        "type": "number"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
