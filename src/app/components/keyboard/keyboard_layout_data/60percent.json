@@ -1,0 +1,11 @@
+{
+    "$schema": "./keyboard_schema.json",
+    "layout_name": "40 percent ISO",
+    "dimensions": {
+        "width": 137,
+        "length": 446,
+        "front_height": 20,
+        "back_height": 33
+    },
+    "has_backlighting": true
+}
